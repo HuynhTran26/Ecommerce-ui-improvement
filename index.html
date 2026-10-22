@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giao diện minh họa khu vực tìm kiếm sản phẩm thương mại điện tử.">
+  <title>Tìm kiếm sản phẩm | JUNO - Bản minh họa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="JUNO - Trang chủ">JUNO<span>.</span></a>
+    <p class="header-note">Tìm món đồ phù hợp với bạn</p>
+  </header>
+
+  <main class="page-content">
+    <section class="search-section" aria-labelledby="page-title">
+      <p class="eyebrow">KHÁM PHÁ BỘ SƯU TẬP</p>
+      <h1 id="page-title">Tìm kiếm sản phẩm</h1>
+      <p class="intro">Nhập tên sản phẩm bạn đang tìm kiếm và khám phá những gợi ý bên dưới.</p>
+
+      <form class="search-form" action="#san-pham-goi-y" method="get" role="search">
+        <label class="visually-hidden" for="product-search">Từ khóa tìm kiếm</label>
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="product-search" name="q" type="search" placeholder="Bạn đang tìm sản phẩm nào?" value="túi">
+        <button type="submit">Tìm kiếm</button>
+      </form>
+      <p class="search-hint">Gợi ý cho từ khóa: <strong>“túi”</strong></p>
+    </section>
+
+    <section class="results-section" id="san-pham-goi-y" aria-labelledby="results-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="results-title">Sản phẩm gợi ý</h2>
+          <p>4 sản phẩm mẫu để minh họa bố cục tìm kiếm</p>
+        </div>
+        <span class="result-count">04 sản phẩm</span>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" id="san-pham-1">
+          <a class="product-image-link" href="#san-pham-1" aria-label="Xem chi tiết Túi đeo vai thanh lịch">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85" alt="Túi xách màu nâu trên nền trung tính" loading="lazy">
+            <span class="product-tag">BÁN CHẠY</span>
+          </a>
+          <div class="product-info">
+            <p class="product-category">TÚI XÁCH</p>
+            <h3><a href="#san-pham-1">Túi đeo vai thanh lịch</a></h3>
+            <p class="product-price">590.000đ</p>
+            <a class="product-action" href="#san-pham-1">Xem sản phẩm <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" id="san-pham-2">
+          <a class="product-image-link" href="#san-pham-2" aria-label="Xem chi tiết Túi mini thời trang">
+            <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=700&q=85" alt="Túi mini thời trang" loading="lazy">
+            <span class="product-tag product-tag-light">GỢI Ý</span>
+          </a>
+          <div class="product-info">
+            <p class="product-category">TÚI MINI</p>
+            <h3><a href="#san-pham-2">Túi mini thời trang</a></h3>
+            <p class="product-price">450.000đ</p>
+            <a class="product-action" href="#san-pham-2">Xem sản phẩm <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" id="san-pham-3">
+          <a class="product-image-link" href="#san-pham-3" aria-label="Xem chi tiết Túi xách công sở">
+            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=85" alt="Túi xách màu đen kiểu dáng tối giản" loading="lazy">
+            <span class="product-tag">MỚI</span>
+          </a>
+          <div class="product-info">
+            <p class="product-category">TÚI XÁCH</p>
+            <h3><a href="#san-pham-3">Túi xách công sở</a></h3>
+            <p class="product-price">690.000đ</p>
+            <a class="product-action" href="#san-pham-3">Xem sản phẩm <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" id="san-pham-4">
+          <a class="product-image-link" href="#san-pham-4" aria-label="Xem chi tiết Túi đeo chéo nhỏ gọn">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=700&q=85" alt="Phụ kiện thời trang trên nền sáng" loading="lazy">
+          </a>
+          <div class="product-info">
+            <p class="product-category">TÚI ĐEO CHÉO</p>
+            <h3><a href="#san-pham-4">Túi đeo chéo nhỏ gọn</a></h3>
+            <p class="product-price">520.000đ</p>
+            <a class="product-action" href="#san-pham-4">Xem sản phẩm <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="all-results">
+        <a href="#san-pham-goi-y">Xem tất cả kết quả tìm kiếm <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+    <p class="demo-note">Trang minh họa phục vụ bài tập HTML/CSS. Tên sản phẩm, giá và hình ảnh chỉ dùng làm dữ liệu mẫu, không đại diện cho danh mục hoặc giá bán thực tế của JUNO.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Giao diện minh họa học tập · HTML5 &amp; CSS3</p>
+  </footer>
+</body>
+</html>
