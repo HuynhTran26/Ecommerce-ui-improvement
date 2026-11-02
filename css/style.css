@@ -547,3 +547,63 @@ img {
     display: block;
 }
 
+/* ==============================
+   THỰC HÀNH CSS SELECTOR VÀ BOX MODEL
+   ============================== */
+
+/* 1. Element selector */
+article {
+    box-sizing: border-box;
+}
+
+/* 2. Class selector: thẻ sản phẩm */
+.product-card {
+    margin: 12px;
+    padding: 0;
+    border: 1px solid #e5e2df;
+    border-radius: 14px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* 3. Descendant selector: nội dung bên trong thẻ sản phẩm */
+.product-card .product-info {
+    padding: 16px;
+}
+
+/* 4. Định dạng tên sản phẩm */
+.product-card .product-info h3 {
+    margin: 8px 0;
+    color: #252525;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* 5. Định dạng giá sản phẩm */
+.product-card .product-price {
+    margin: 12px 0;
+    color: #a52e36;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* 6. Định dạng liên kết thành nút thao tác */
+.product-card .product-action {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #a52e36;
+    border: 1px solid #a52e36;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hiệu ứng khi di chuột */
+.product-card .product-action:hover {
+    background-color: #84232b;
+    border-color: #84232b;
+}
+
