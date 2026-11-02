@@ -607,3 +607,18 @@ article {
     border-color: #84232b;
 }
 
+/* THỰC HÀNH CSS FLEXBOX */
+
+/* Phần tử cha */
+.results-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Phần tử hiển thị số lượng sản phẩm */
+.results-count {
+    margin: 0;
+    white-space: nowrap;
+}
