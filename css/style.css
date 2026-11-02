@@ -648,3 +648,27 @@ article {
     background-color: #f5c6c6;
     white-space: nowrap;
 }
+/* THỰC HÀNH CSS GRID CHO DANH SÁCH SẢN PHẨM */
+
+/* 1. Bố trí danh sách sản phẩm thành 2 cột */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* 2. Giữ khu vực hình ảnh có cùng tỷ lệ */
+.product-image-link {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+}
+
+/* 3. Hiển thị hình ảnh đúng kích thước khu vực */
+.product-image-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
