@@ -1,297 +1,152 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Giao diện tìm kiếm và gợi ý sản phẩm thời trang JUNO."
-    >
+<div class="product-grid">
 
-    <title>Tìm kiếm sản phẩm JUNO</title>
+    <!-- SẢN PHẨM 1 -->
+    <article class="product-card">
+        <a href="LINK_SAN_PHAM_CU_1" class="product-image-link">
+            <img src="LINK_ANH_CU_1" alt="Túi xách JUNO sản phẩm 1">
+            <span class="product-tag">Nổi bật</span>
+        </a>
 
-    <!-- Kết nối file CSS -->
-    <link rel="stylesheet" href="style.css">
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="LINK_SAN_PHAM_CU_1">Sản phẩm JUNO 1</a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="LINK_SAN_PHAM_CU_1" class="product-action">Xem sản phẩm</a>
+        </div>
+    </article>
 
-    <!-- Google Analytics: chỉ thêm khi đã xác minh Measurement ID -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-MEASUREMENT_ID');
-    </script>
-    -->
-</head>
+    <!-- SẢN PHẨM 2 -->
+    <article class="product-card">
+        <a href="LINK_SAN_PHAM_CU_2" class="product-image-link">
+            <img src="LINK_ANH_CU_2" alt="Túi xách JUNO sản phẩm 2">
+            <span class="product-tag">Bán chạy</span>
+        </a>
 
-<body>
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="LINK_SAN_PHAM_CU_2">Sản phẩm JUNO 2</a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="LINK_SAN_PHAM_CU_2" class="product-action">Xem sản phẩm</a>
+        </div>
+    </article>
 
-    <!-- PHẦN ĐẦU TRANG -->
-    <header class="site-header">
-        <a href="#" class="brand">JUNO</a>
+    <!-- SẢN PHẨM 3 -->
+    <article class="product-card">
+        <a href="LINK_SAN_PHAM_CU_3" class="product-image-link">
+            <img src="LINK_ANH_CU_3" alt="Túi xách JUNO sản phẩm 3">
+            <span class="product-tag">Mới</span>
+        </a>
 
-        <p class="header-note">
-            Khám phá phong cách thời trang của bạn
-        </p>
-    </header>
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="LINK_SAN_PHAM_CU_3">Sản phẩm JUNO 3</a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="LINK_SAN_PHAM_CU_3" class="product-action">Xem sản phẩm</a>
+        </div>
+    </article>
 
-    <!-- NỘI DUNG CHÍNH -->
-    <main class="page-content">
+    <!-- SẢN PHẨM 4 -->
+    <article class="product-card">
+        <a href="LINK_SAN_PHAM_CU_4" class="product-image-link">
+            <img src="LINK_ANH_CU_4" alt="Túi xách JUNO sản phẩm 4">
+        </a>
 
-        <!-- KHU VỰC TÌM KIẾM -->
-        <section class="search-section">
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="LINK_SAN_PHAM_CU_4">Sản phẩm JUNO 4</a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="LINK_SAN_PHAM_CU_4" class="product-action">Xem sản phẩm</a>
+        </div>
+    </article>
 
-            <p class="eyebrow">KHÁM PHÁ JUNO</p>
+    <!-- SẢN PHẨM 5 -->
+    <article class="product-card">
+        <a href="https://juno.vn/products/tui-xach-nho-sweetie-pearl-chain-kekr" class="product-image-link">
+            <img src="LINK_ANH_SWEETIE" alt="Túi xách nhỏ Sweetie Pearl Chain JUNO">
+            <span class="product-tag">Mới</span>
+        </a>
 
-            <h1>Tìm kiếm sản phẩm bạn yêu thích</h1>
-
-            <p class="search-intro">
-                Khám phá những sản phẩm thời trang phù hợp với phong cách của bạn.
-            </p>
-
-            <form
-                class="search-form"
-                role="search"
-                action="#san-pham-goi-y"
-                method="get"
-            >
-                <label for="search-input" class="visually-hidden">
-                    Nhập tên sản phẩm cần tìm
-                </label>
-
-                <span class="search-icon" aria-hidden="true">
-                    🔍
-                </span>
-
-                <input
-                    type="search"
-                    id="search-input"
-                    name="keyword"
-                    placeholder="Tìm kiếm sản phẩm..."
-                    value="túi"
-                >
-
-                <button type="submit">
-                    Tìm kiếm
-                </button>
-            </form>
-
-            <p class="search-hint">
-                Gợi ý: túi xách, giày dép, phụ kiện...
-            </p>
-
-        </section>
-
-        <!-- KHU VỰC SẢN PHẨM GỢI Ý -->
-        <section
-            class="results-section"
-            id="san-pham-goi-y"
-        >
-
-            <div class="results-heading">
-                <div>
-                    <h2>Sản phẩm gợi ý</h2>
-
-                    <p>
-                        Những sản phẩm có thể phù hợp với tìm kiếm của bạn.
-                    </p>
-                </div>
-
-                <p class="results-count">
-                    4 sản phẩm
-                </p>
-            </div>
-
-            <!-- DANH SÁCH SẢN PHẨM -->
-            <div class="product-grid">
-
-                <!-- SẢN PHẨM 1 -->
-                <article class="product-card" id="san-pham-1">
-
-                    <a
-                        href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_1"
-                        class="product-image-link"
-                    >
-                        <img
-                            src="ĐƯỜNG_DẪN_TRỰC_TIẾP_ẢNH_1"
-                            alt="Hình ảnh sản phẩm túi JUNO thứ nhất"
-                        >
-
-                        <span class="product-tag">
-                            Nổi bật
-                        </span>
-                    </a>
-
-                    <div class="product-info">
-                        <p class="product-category">
-                            Túi xách
-                        </p>
-
-                        <h3>
-                            <a href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_1">
-                                Túi JUNO sản phẩm 1
-                            </a>
-                        </h3>
-
-                        <p class="product-price">
-                            Giá sản phẩm
-                        </p>
-
-                        <a
-                            href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_1"
-                            class="product-action"
-                        >
-                            Xem sản phẩm
-                        </a>
-                    </div>
-
-                </article>
-
-                <!-- SẢN PHẨM 2 -->
-                <article class="product-card" id="san-pham-2">
-
-                    <a
-                        href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_2"
-                        class="product-image-link"
-                    >
-                        <img
-                            src="ĐƯỜNG_DẪN_TRỰC_TIẾP_ẢNH_2"
-                            alt="Hình ảnh sản phẩm túi JUNO thứ hai"
-                        >
-
-                        <span class="product-tag">
-                            Bán chạy
-                        </span>
-                    </a>
-
-                    <div class="product-info">
-                        <p class="product-category">
-                            Túi xách
-                        </p>
-
-                        <h3>
-                            <a href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_2">
-                                Túi JUNO sản phẩm 2
-                            </a>
-                        </h3>
-
-                        <p class="product-price">
-                            Giá sản phẩm
-                        </p>
-
-                        <a
-                            href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_2"
-                            class="product-action"
-                        >
-                            Xem sản phẩm
-                        </a>
-                    </div>
-
-                </article>
-
-                <!-- SẢN PHẨM 3 -->
-                <article class="product-card" id="san-pham-3">
-
-                    <a
-                        href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_3"
-                        class="product-image-link"
-                    >
-                        <img
-                            src="ĐƯỜNG_DẪN_TRỰC_TIẾP_ẢNH_3"
-                            alt="Hình ảnh sản phẩm túi JUNO thứ ba"
-                        >
-
-                        <span class="product-tag">
-                            Mới
-                        </span>
-                    </a>
-
-                    <div class="product-info">
-                        <p class="product-category">
-                            Túi xách
-                        </p>
-
-                        <h3>
-                            <a href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_3">
-                                Túi JUNO sản phẩm 3
-                            </a>
-                        </h3>
-
-                        <p class="product-price">
-                            Giá sản phẩm
-                        </p>
-
-                        <a
-                            href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_3"
-                            class="product-action"
-                        >
-                            Xem sản phẩm
-                        </a>
-                    </div>
-
-                </article>
-
-                <!-- SẢN PHẨM 4 -->
-                <article class="product-card" id="san-pham-4">
-
-                    <a
-                        href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_4"
-                        class="product-image-link"
-                    >
-                        <img
-                            src="ĐƯỜNG_DẪN_TRỰC_TIẾP_ẢNH_4"
-                            alt="Hình ảnh sản phẩm túi JUNO thứ tư"
-                        >
-                    </a>
-
-                    <div class="product-info">
-                        <p class="product-category">
-                            Túi xách
-                        </p>
-
-                        <h3>
-                            <a href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_4">
-                                Túi JUNO sản phẩm 4
-                            </a>
-                        </h3>
-
-                        <p class="product-price">
-                            Giá sản phẩm
-                        </p>
-
-                        <a
-                            href="ĐƯỜNG_DẪN_TRANG_SẢN_PHẨM_4"
-                            class="product-action"
-                        >
-                            Xem sản phẩm
-                        </a>
-                    </div>
-
-                </article>
-
-            </div>
-
-            <!-- LIÊN KẾT XEM THÊM -->
-            <a href="https://juno.vn/" class="all-results">
-                Xem tất cả sản phẩm
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="https://juno.vn/products/tui-xach-nho-sweetie-pearl-chain-kekr">
+                    Túi xách nhỏ Sweetie Pearl Chain
+                </a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="https://juno.vn/products/tui-xach-nho-sweetie-pearl-chain-kekr" class="product-action">
+                Xem sản phẩm
             </a>
+        </div>
+    </article>
 
-            <p class="demo-note">
-                Đây là giao diện mô phỏng phục vụ bài tập học tập.
-            </p>
+    <!-- SẢN PHẨM 6 -->
+    <article class="product-card">
+        <a href="https://juno.vn/products/tui-xach-nho-hobo-charm-uTtU" class="product-image-link">
+            <img src="LINK_ANH_HOBO_CHARM" alt="Túi xách nhỏ Hobo Charm JUNO">
+        </a>
 
-        </section>
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="https://juno.vn/products/tui-xach-nho-hobo-charm-uTtU">
+                    Túi xách nhỏ Hobo Charm
+                </a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="https://juno.vn/products/tui-xach-nho-hobo-charm-uTtU" class="product-action">
+                Xem sản phẩm
+            </a>
+        </div>
+    </article>
 
-    </main>
+    <!-- SẢN PHẨM 7 -->
+    <article class="product-card">
+        <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-khoa-X894" class="product-image-link">
+            <img src="LINK_ANH_TOP_HANDLE_KHOA" alt="Túi xách nhỏ Top Handle phối khóa JUNO">
+        </a>
 
-    <!-- CHÂN TRANG -->
-    <footer class="site-footer">
-        <p>
-            © JUNO - Giao diện mô phỏng phục vụ học tập.
-        </p>
-    </footer>
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-khoa-X894">
+                    Túi xách nhỏ Top Handle phối khóa
+                </a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-khoa-X894" class="product-action">
+                Xem sản phẩm
+            </a>
+        </div>
+    </article>
 
-</body>
-</html>
+    <!-- SẢN PHẨM 8 -->
+    <article class="product-card">
+        <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-charm-no-x0Mn" class="product-image-link">
+            <img src="LINK_ANH_TOP_HANDLE_CHARM_NO" alt="Túi xách nhỏ Top Handle phối charm nơ JUNO">
+        </a>
+
+        <div class="product-info">
+            <p class="product-category">Túi xách</p>
+            <h3>
+                <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-charm-no-x0Mn">
+                    Túi xách nhỏ Top Handle phối charm nơ
+                </a>
+            </h3>
+            <p class="product-price">Giá sản phẩm</p>
+            <a href="https://juno.vn/products/tui-xach-nho-top-handle-phoi-charm-no-x0Mn" class="product-action">
+                Xem sản phẩm
+            </a>
+        </div>
+    </article>
+
+</div>
