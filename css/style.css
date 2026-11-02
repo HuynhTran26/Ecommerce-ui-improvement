@@ -65,7 +65,7 @@ img {
   padding: 16px max(5%, calc((100% - 1180px) / 2));
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
   background: var(--color-white);
   border-bottom: 1px solid var(--color-border);
