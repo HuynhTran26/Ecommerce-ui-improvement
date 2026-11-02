@@ -670,3 +670,34 @@ article {
     height: 100%;
     object-fit: cover;
 }
+/* BƯỚC 7: HIỆU ỨNG HOVER VÀ FOCUS */
+
+/* Trạng thái mặc định của nút Xem sản phẩm */
+.product-card .product-action {
+    color: #a52e36;
+    background-color: #ffffff;
+    border: 1px solid #a52e36;
+    border-radius: 7px;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hiệu ứng khi rê chuột */
+.product-card .product-action:hover {
+    color: #ffffff;
+    background-color: #84232b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(36, 28, 24, 0.15);
+}
+
+/* Hiệu ứng khi sử dụng bàn phím */
+.product-card .product-action:focus-visible {
+    color: #ffffff;
+    background-color: #84232b;
+    outline: 3px solid #d18a8f;
+    outline-offset: 3px;
+}
