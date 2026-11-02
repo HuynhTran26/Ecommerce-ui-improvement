@@ -701,3 +701,22 @@ article {
     outline: 3px solid #d18a8f;
     outline-offset: 3px;
 }
+/* KIỂM TRA HOVER VÀ FOCUS - BƯỚC 7 */
+.product-card .product-action {
+    background-color: #ffffff !important;
+    color: #a52e36 !important;
+    border: 2px solid #a52e36 !important;
+    transition: all 0.3s ease !important;
+}
+
+.product-card .product-action:hover {
+    background-color: #ffcc00 !important;
+    color: #000000 !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.product-card .product-action:focus-visible {
+    outline: 4px solid #0066ff !important;
+    outline-offset: 4px !important;
+}
