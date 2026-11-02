@@ -622,3 +622,29 @@ article {
     margin: 0;
     white-space: nowrap;
 }
+
+/* KIỂM TRA FLEXBOX */
+.results-heading {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 30px;
+
+    width: 100%;
+    padding: 20px;
+    background-color: #fff0e6;
+    border: 2px solid #a52e36;
+}
+
+.results-heading > div {
+    background-color: #ffe0cc;
+    padding: 10px;
+}
+
+.results-heading .results-count {
+    margin: 0;
+    padding: 10px;
+    background-color: #f5c6c6;
+    white-space: nowrap;
+}
