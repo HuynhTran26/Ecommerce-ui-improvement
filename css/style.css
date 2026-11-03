@@ -702,21 +702,26 @@ article {
     outline-offset: 3px;
 }
 /* KIỂM TRA HOVER VÀ FOCUS - BƯỚC 7 */
+/* BƯỚC 7: HIỆU ỨNG HOVER VÀ FOCUS */
+
 .product-card .product-action {
-    background-color: #ffffff !important;
-    color: #a52e36 !important;
-    border: 2px solid #a52e36 !important;
-    transition: all 0.3s ease !important;
+    background-color: #ffffff;
+    color: #a52e36;
+    border: 1px solid #a52e36;
+    transition: all 0.3s ease;
 }
 
+/* Khi di chuyển chuột lên nút */
 .product-card .product-action:hover {
-    background-color: #ffcc00 !important;
-    color: #000000 !important;
-    transform: scale(1.08) !important;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3) !important;
+    background-color: #84232b;
+    color: #ffffff;
+    border-color: #84232b;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(36, 28, 24, 0.18);
 }
 
+/* Khi điều hướng bằng bàn phím */
 .product-card .product-action:focus-visible {
-    outline: 4px solid #0066ff !important;
-    outline-offset: 4px !important;
+    outline: 3px solid #d18a8f;
+    outline-offset: 4px;
 }
